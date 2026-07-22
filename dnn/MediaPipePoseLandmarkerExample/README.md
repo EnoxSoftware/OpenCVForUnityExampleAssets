@@ -1,10 +1,25 @@
-This repository contains ONNX models converted from MediaPipe TFLite models.
+# MediaPipePoseLandmarkerExample
 
-Original models:
-https://github.com/google-ai-edge/mediapipe
+This repository contains ONNX models converted from the original MediaPipe TFLite models.
 
-License:
-Apache License 2.0 (same as original MediaPipe models)
+## Original Models
 
-Modifications:
-- Converted from TFLite to ONNX format
+- https://github.com/google-ai-edge/mediapipe
+
+## License
+
+These models are licensed under the **Apache License 2.0**, the same license as the original MediaPipe models.
+
+## Conversion Process
+
+The models were converted from TFLite to ONNX using the following workflow:
+
+```text
+.tflite
+    ↓
+tf2onnx
+    ↓
+.onnx
+    ↓
+onnx-simplifier
+```
